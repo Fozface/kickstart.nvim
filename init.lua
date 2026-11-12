@@ -423,13 +423,9 @@ do
   -- change the command under that to load whatever the name of that colorscheme is.
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  vim.pack.add { gh 'ray-x/aurora' }
-  ---@diagnostic disable-next-line: missing-fields
-vim.pack.add { gh 'ray-x/aurora' }
-
-vim.g.aurora_italic = 0   -- optional, must come before the colorscheme line
-vim.g.aurora_bold = 0     -- optional
-vim.cmd.colorscheme 'aurora'
+  -- Neon Aurora: aurora purples + neon greens on tokyonight's engine.
+  -- Palette and highlight mapping live in lua/custom/neon-aurora.lua
+  require 'custom.neon-aurora'
 
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
